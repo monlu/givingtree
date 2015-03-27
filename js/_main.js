@@ -12,7 +12,7 @@
 	
 	// Setup variables
 	$window = $(window);
-	$slide = $('.homeSlide');
+	$slide = $('.defaultSlide');
 	$body = $('body');
 	
     //FadeIn all sections   
@@ -34,7 +34,7 @@
 		var s = skrollr.init();
  
 		// Refresh Skrollr after resizing our sections
-		s.refresh($('.homeSlide'));
+		s.refresh($('.defaultSlide'));
 		
 		
 		// Get window size
