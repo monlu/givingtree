@@ -90,38 +90,14 @@ main {
     text-decoration: underline;
   }
 
-/* Slide 1 */
+/* Slide Backgrounds */
 #slide-1 .bkg {background-image:url('../img/SVGs/1.svg')}
-#slide-1 .dsContent {
-  bottom: 200px;
-  top: auto;
-}
-
-/* Slide 2 */
-#slide-2 .bkg {background-image:url('../img/SVGs/2.svg')}
-#slide-2 .dsContent {
-  margin-left: -450px;
-  bottom: 200px;
-  top: auto;
-}
-
-/* Slide 3 */
-#slide-3 .bkg {background-image:url('../img/SVGs/3.svg')}
-#slide-3 .dsContent {
-  margin-left: -239px;
-}
-  #slide-3 h2 {
-    color: #f2ead6;
-    background-color: rgba(0,0,0,0.6);
-  }
-
-/* Slide 4 */
-#slide-4 .bkg {background-image:url('../img/SVGs/4.svg')}
-#slide-4 .dsContent {
-  margin-left: -450px;
-}
-  #slide-4 h2 {
-    background: none;
-    padding-left: 0;
-    padding-right: 0;
-  }
+#slide-2 .bkg {background-image:url('../img/SVGs/4.svg')}
+#slide-3 .bkg {background-image:url('../img/SVGs/5.svg')}
+#slide-4 .bkg {background-image:url('../img/SVGs/10.svg')}
+#slide-5 .bkg {background-image:url('../img/SVGs/11.svg')}
+#slide-6 .bkg {background-image:url('../img/SVGs/12.svg')}
+#slide-7 .bkg {background-image:url('../img/SVGs/13.svg')}
+#slide-8 .bkg {background-image:url('../img/SVGs/14.svg')}
+#slide-9 .bkg {background-image:url('../img/SVGs/15.svg')}
+\
