@@ -100,4 +100,13 @@ main {
 #slide-7 .bkg {background-image:url('../img/SVGs/13.svg')}
 #slide-8 .bkg {background-image:url('../img/SVGs/14.svg')}
 #slide-9 .bkg {background-image:url('../img/SVGs/15.svg')}
-\
+
+#info {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 20px;
+  z-index: 9999;
+}

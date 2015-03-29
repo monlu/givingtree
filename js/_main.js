@@ -31,7 +31,12 @@
 	function adjustWindow(){
 		
 		// Init Skrollr
-		var s = skrollr.init();
+		var s = skrollr.init({
+			render: function(data) {
+			  //Log the current scroll position.
+			  $('#info').text(data.curTop);
+			}
+		});
  
 		// Refresh Skrollr after resizing our sections
 		s.refresh($('.defaultSlide'));
