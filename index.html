@@ -1,197 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>The Giving Tree</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/boilerplate.css">
-  <link rel="stylesheet" href="./css/custom.css">
-  <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+  <title></title>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="loading">
+<body>
+<div id="info">0</div>
 
-  <div id="preload">
-          <img src="img/SVGs/1.svg">
-          <img src="img/SVGs/4.svg">
-          <img src="img/SVGs/5.svg">
-          <img src="img/SVGs/10.svg">
-          <img src="img/SVGs/11.svg">
-          <img src="img/SVGs/12.svg">
-          <img src="img/SVGs/13.svg">
-          <img src="img/SVGs/14.svg">
-          <img src="img/SVGs/15.svg">
-          <img src="img/SVGs/12.svg">
-        </div>
-  <main>
-  <div id="info">0</div>
+<section id="slide-1" class="slide">
+  <!-- Title Page -->
+  <div class=bcg></div>
+  <div class='item text1'
+    data-0="opacity: 0"
+    data-300="opacity: 1;"
+    data-1800="opacity: 1;"
+    data-2500="opacity: 0;"
+  >
+    <h1>The</h1>
+  </div>
+  <div class=bcg></div>
+  <div class='item text2'
+    data-300="opacity: 0"
+    data-600="opacity: 1;"
+    data-1800="opacity: 1;"
+    data-2500="opacity: 0;"
+  >
+    <h1>Giving</h1>
+  </div>
+  <div class=bcg></div>
+  <div class='item text3'
+    data-600="opacity: 0"
+    data-900="opacity: 1;"
+    data-1800="opacity: 1;"
+    data-2500="opacity: 0;"
+  >
+    <h1>Tree</h1>
+  </div>
+  <div class='item text4'
+    data-900="opacity: 0"
+    data-1200="opacity: 1;"
+    data-1800="opacity: 1;"
+    data-2500="opacity: 0;"
+  >
+  <h3>By Shel Silverstein</h3>
+  </div>
+  <div class= 'item tree'
+    data-1200="opacity: 0"
+    data-1500="opacity: 1;"
+    data-1800="opacity: 1;"
+    data-2500="opacity: 0;"
+  >
+    <img src="img/ills/tree_p1.svg">
+  </div>
+  <div class= 'item boy'
+    data-1500="opacity: 0"
+    data-1800="opacity: 1;"
+    data-2500="opacity: 0;"
+  >
+    <img src="img/ills/boy_p1.svg">
+  </div>
+  <div class= 'item apple'
+    data-1700="opacity: 0; transform: translateY(-200px)"
+    data-1800="opacity: 1; transform: translateY(-200px)"
+    data-2500="opacity: 0; transform: translateY(-100px);"
+  >
+    <img src="img/ills/apple_p1.svg">
+  </div>
 
-
-
-    <!-- Section 1 -->
-    <section id="slide-1" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 2 -->
-    <section id="slide-2" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 3 -->
-    <section id="slide-3" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 4 -->
-    <section id="slide-4" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 5 -->
-    <section id="slide-5" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 6 -->
-    <section id="slide-6" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 7 -->
-    <section id="slide-7" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 8 -->
-    <section id="slide-8" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 9 -->
-    <section id="slide-9" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 10 -->
-    <section id="slide-10" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 11 -->
-    <section id="slide-11" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 12 -->
-    <section id="slide-12" class="defaultSlide">
-      <div class="bkg">
-        <div class="dsContainer">
-          <div class="dsContent">
-            
-
-            
-          </div> 
-        </div>
-      </div>
-    </section>
+</section>
 
 
-  </main>
+<section id="slide-2" class="slide">
+  <!-- Introduction --> 
+  <div class="bcg"></div>
+    <div class= 'item text1'
+      data-4100 ="opacity: 0"
+      data-4400 ="opacity: 1;"
+      data-4700 ="opacity: 0;"
+    >
+      <h3>Once there was a tree...</h3>
+    </div>
+    <div class='item text2'
+      data-5000 ="opacity: 0"
+      data-5300 ="opacity: 1;"
+      data-5600 ="opacity: 0;"
+    >
+      <h3>And she loved a little boy</h3>
+    </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-  <script src="./js/imagesloaded.js"></script>
-  <script src="./js/skrollr.js"></script>
-  <script src="./js/_main.js"></script>
+    <div class= 'item text2'
+      data-5900="opacity: 0"
+      data-6100 ="opacity: 1;"
+      data-6400 ="opacity: 0;"
+    >
+      <h3>And every day the boy would come</h3>
+    </div> 
+
+    <div class="item tree1"
+      data-2800 ="opacity: 0;" 
+      data-4100="opacity: 1;"
+      data-7300 ="opacity: 1;"
+      data-7500 ="opacity: 0;"
+    >
+      <img src="img/ills/tree_p2.svg">
+    </div>
+
+    <div class="item tree2"
+      data-7300="opacity: 0;" 
+      data-7500="opacity: 1;"
+      data-8200="opacity: 1;" 
+      data-8500="opacity: 0;" 
+    >
+      <img src="img/ills/tree_p4.svg">
+    </div>
+
+    <div class="item boy1"
+      data-6700 ="opacity: 1; transform: translateX(1500px) rotate(-10deg);" 
+      data-7000 ="opacity: 1; transform: translateX(1300px) rotate(-10deg);"
+      data-7200 ="opacity: 0; transform: translateX(1300px) rotate(-10deg);"
+      data-7300 ="opacity: 0; transform: translateX(1250px) rotate(-10deg);"
+      data-7500 ="opacity: 1; transform: translateX(1250px) rotate(-10deg);"
+      data-7700 ="opacity: 0; transform: translateX(1000px) rotate(-10deg);"
+      data-7800 ="opacity: 0; transform: translateX(950px) rotate(-10deg);"
+      data-8000 ="opacity: 1; transform: translateX(950px) rotate(-10deg);"
+      data-8200 ="opacity: 1; transform: translateX(700px) rotate(-10deg);"
+      data-8500 ="opacity: 0; transform: translateX(700px) rotate(-10deg);"
+
+    >
+      <img src="img/ills/boy_p4.svg">
+  </div>
+
+  <!-- Gathering Leaves --> 
+  <div class= 'item text3'
+      data-8800="opacity: 0"
+      data-9100 ="opacity: 1;"
+      data-9400 ="opacity: 0;"
+    >
+      <h3>And he would gather her leaves</h3>
+    </div> 
+
+    <div class= 'item text4'
+      data-9700="opacity: 0"
+      data-10000 ="opacity: 1;"
+      data-10300 ="opacity: 0;"
+    >
+      <h3>And make them into crowns</h3>
+    </div> 
+
+    <div class= 'item text5'
+      data-10600="opacity: 0"
+      data-10900 ="opacity: 1;"
+      data-11200 ="opacity: 0;"
+    >
+      <h3>And play king of the forest</h3>
+    </div> 
+
+    <div class="item tree3"
+      data-8200="opacity: 0;" 
+      data-8500="opacity: 1;"
+      data-13400="opacity: 1;" 
+      data-13700="opacity: 0;"
+    >
+      <img src="img/ills/tree_p5.svg">
+    </div>
+
+    <div class="item boy2"
+      data-8200="opacity: 0;" 
+      data-8500="opacity: 1;"
+      data-10900 ="opacity: 1;"
+      data-11200 ="opacity: 0;"
+    >
+      <img src="img/ills/boyreach_p5.svg">
+    </div>
+
+    <div class="item boy3"
+      data-11200="opacity: 0; transform: translateX(0px) scaleX(1)" 
+      data-11500="opacity: 1; transform: translateX(0px) scaleX(1)"
+      data-12400="opacity: 1; transform: translateX(300px) scaleX(1)"
+      data-12500="opacity: 1; transform: translateX(300px) scaleX(-1)"
+      data-13400="opacity: 1; transform: translateX(0px) scaleX(-1)"
+      data-13700="opacity: 0; transform: translateX(-100px) scaleX(-1)"
+    >
+      <img src="img/ills/boyleafcrown_p6.svg">
+    </div>
+
+      <!-- Climbing Tree --> 
+      <div class="item tree4"
+      data-13400="opacity: 0;" 
+      data-13700="opacity: 1;"
+      data-19800="opacity: 1;"
+      data-20400="opacity: 0;"
+    >
+      <img src="img/ills/tree_p7.svg">
+    </div>
+
+    <div class="item boy4"
+      data-14000="opacity: 0;" 
+      data-14300="opacity: 1;"
+      data-14700="opacity: 0"
+    >
+      <img src="img/ills/boyclimb_p7.svg">
+    </div>
+
+    <div class="item boy5"
+      data-15300="opacity: 0;" 
+      data-15600="opacity: 1;"
+      data-15900="opacity: 0"
+    >
+      <img src="img/ills/boyclimb_p7.svg">
+    </div>
+
+    <div class="item boy6"
+      data-16500="opacity: 0;" 
+      data-16800="opacity: 1;"
+      data-17100="opacity: 0"
+    >
+      <img src="img/ills/boyclimb_p7.svg">
+    </div>
+
+    <!-- Swinging In Tree --> 
+    <div class="item boy7"
+      data-17400="opacity: 0; transform-origin: 0% 0%; transform: rotate(15deg)" 
+      data-18000="opacity: 1; transform-origin: 0% 0%; transform: rotate(0deg)"
+      data-18600="opacity: 1; transform-origin: 0% 0%; transform: rotate(15deg)"
+      data-19200="opacity: 1; transform-origin: 0% 0%; transform: rotate(0deg)"
+      data-19800="opacity: 1; transform-origin: 0% 0%; transform: rotate(15deg)"
+      data-20400="opacity: 0; transform-origin: 0% 0%; transform: rotate(0deg)"   
+    >
+      <img src="img/ills/treefeet_p8.svg">
+    </div>
+
+    <!-- Eating Apples --> 
+    <div class="item tree5"
+      data-19800="opacity: 0;"
+      data-20400="opacity: 1;"
+      data-22100="opacity: 1;"
+      data-22400="opacity: 0;"
+    >
+      <img src="img/ills/tree_p9.svg">
+    </div>
+
+    <div class="item apple1"
+      data-20900="opacity: 0; transform: translateY(0px) rotate(15deg)"
+      data-21000="opacity: 1; transform: translateY(0px) rotate(15deg)"
+      data-21300="opacity: 0; transform: translateY(400px) rotate(180deg)"
+    >
+      <img src="img/ills/applecore.svg">
+    </div>
+
+    <div class="item apple2"
+      data-21300="opacity: 0; transform: translateY(0px) rotate(-30deg)"
+      data-21400="opacity: 1; transform: translateY(0px) rotate(-30deg)"
+      data-21700="opacity: 0; transform: translateY(400px) rotate(180deg)"
+    >
+      <img src="img/ills/applecore.svg">
+    </div>
+
+    <div class="item apple3"
+      data-21700="opacity: 0; transform: translateY(0px) rotate(45deg)"
+      data-21800="opacity: 1; transform: translateY(0px) rotate(45deg)"
+      data-22100="opacity: 0; transform: translateY(400px) rotate(180deg)"
+    >
+      <img src="img/ills/applecore.svg">
+    </div>
+
+    <!-- Playing Hide and Seek --> 
+    <div class="item rock1"
+      data-22400="opacity: 0;"
+      data-22700="opacity: 1;"
+      data-24200="opacity: 1;"
+      data-24500="opacity: 0;"
+    >
+      <img src="img/ills/bigrocks_p10.svg">
+    </div>
+
+    <div class="item rock2"
+      data-22400="opacity: 0;"
+      data-22700="opacity: 1;"
+      data-24200="opacity: 1;"
+      data-24500="opacity: 0;"
+    >
+      <img src="img/ills/smallrock_p10.svg">
+    </div>
+
+    <div class="item boy8"
+      data-23000="opacity: 0;"
+      data-23300="opacity: 1;"
+      data-24200="opacity: 1;"
+      data-24500="opacity: 0;"
+    >
+      <img src="img/ills/boycrouch_p10.svg">
+    </div>
+
+    <div class="item tree6"
+      data-23600="opacity: 0;"
+      data-23900="opacity: 1;"
+      data-24200="opacity: 1;"
+      data-24500="opacity: 0;"
+    >
+      <img src="img/ills/tree_p10.svg">
+    </div>
+
+    <!-- Sleeping Under Tree -->
+    <div class="item tree7"
+      data-24200="opacity: 0;"
+      data-24500="opacity: 1;"
+      data-24800="opacity: 1;"
+      data-25100="opacity: 0;"
+    >
+      <img src="img/ills/boysleeptree_p11.svg">
+    </div>
+
+    <div class="item applecores"
+      data-24200="opacity: 0;"
+      data-24500="opacity: 1;"
+      data-24800="opacity: 1;"
+      data-25100="opacity: 0;"
+    >
+      <img src="img/ills/applecores_p11.svg">
+    </div> 
+
+    <!-- Hugging Tree -->
+    <div class="item tree8"
+      data-24800="opacity: 0;"
+      data-25100="opacity: 1;"
+      data-25400="opacity: 1;"
+      data-25700="opacity: 0;"
+    >
+      <img src="img/ills/boyhugtree_p12.svg">
+    </div> 
+
+    <div class="item leaves"
+      data-24800="opacity: 0;"
+      data-25100="opacity: 1;"
+      data-25400="opacity: 1;"
+      data-25700="opacity: 0;"
+    >
+      <img src="img/ills/leaves_p12.svg">
+    </div> 
+</section>
+
+
+<script type="text/javascript" src="js/skrollr.js"></script>
+
 </body>
 </html>
