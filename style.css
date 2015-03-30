@@ -4,8 +4,11 @@ html {
   background-position: center top;
   background-attachment: fixed;
 }
-h1{
+h1 {
   font-size: 120px;
+}
+h2 {
+  text-align: center;
 }
 #info {
   position: fixed;
@@ -92,3 +95,28 @@ section {
 /* Hugging Tree */
 #slide-2 .tree8 {top: 0px; left: 100px; width: 575px;}
 #slide-2 .leaves {top: 0px; left: 612px; width: 400px;}
+
+/* Carving Tree*/
+#slide-2 .tree9 {top: 0px; left: 200px; width: 675px;}
+#slide-2 .boy9 {top: 530px; left: 600px; width: 90px;}
+#slide-2 .knife {top: 670px; left: 680px; width: 50px;}
+#slide-2 .heart {top: 550px; left: 380px; width: 50px;}
+
+/* Time Passing */
+
+#slide-3 .item {position: absolute; top: 0; left: 0;}
+#slide-3 .passing {position: absolute;  left: 50%; top: 50%; transform: translate(-50%, 0); }
+#slide-3 .tree10 {top: 0px; left: 50px; width: 975px;}
+
+/* Teen Lovin */
+
+#slide-3 .tree11 {top: 0px; left: 150px; width: 725px;}
+
+/* Lonely Tree */
+
+#slide-3 .tree12 {top: 0px; left: 150px; width: 725px;}
+
+/* Young Man Talking to Tree*/
+#slide-4 .item {position: absolute; top: 0; left: 0;}
+#slide-4 .tree13 {top: 0px; left: 400px; width: 800px;}
+#slide-4 .boy10 {top: 330px; left: 380px; width: 167px;}
