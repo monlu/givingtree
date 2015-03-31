@@ -116,7 +116,25 @@ section {
 
 #slide-3 .tree12 {top: 0px; left: 150px; width: 725px;}
 
-/* Young Man Talking to Tree*/
+/* Young Man Talking to Tree */
 #slide-4 .item {position: absolute; top: 0; left: 0;}
 #slide-4 .tree13 {top: 0px; left: 400px; width: 800px;}
 #slide-4 .boy10 {top: 330px; left: 380px; width: 167px;}
+
+/* Young Man Taking Apples */
+#slide-4 .tree14 {top: 0px; left: 150px; width: 875px;}
+#slide-4 .apple1 {top: 100px; left: 250px; width: 50px;}
+#slide-4 .apple2 {top: 100px; left: 350px; width: 40px;}
+#slide-4 .apple3 {top: 100px; left: 500px; width: 50px;}
+#slide-4 .apple4 {top: 100px; left: 600px; width: 40px;}
+#slide-4 .apple5 {top: 100px; left: 700px; width: 50px;}
+#slide-4 .apple6 {top: 100px; left: 800px; width: 40px;}
+#slide-4 .applecluster1 {top: 670px; left: 160px; width: 200px;}
+#slide-4 .applecluster2 {top: 655px; left: 275px; width: 175px;}
+#slide-4 .applecluster3 {top: 615px; left: 450px; width: 115px;}
+#slide-4 .applecluster4 {top: 615px; left: 570px; width: 115px;}
+#slide-4 .applecluster5 {top: 615px; left: 670px; width: 115px;}
+
+/* Man Asking For Branches */
+#slide-5 .item {position: absolute; top: 0; left: 0;}
+#slide-5 .tree15 {top: 0px; left: 150px; width: 875px;}

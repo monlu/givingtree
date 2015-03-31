@@ -4,7 +4,8 @@ $(function () {
 		render: function(data) {
 		  //Log the current scroll position.
 		  $('#info').text(data.curTop);
-		}
+		}, 
+    smoothScrolling : 'true'
 	});
 })
 
