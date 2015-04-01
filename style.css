@@ -1,11 +1,12 @@
 html {
-  background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');
+/*  background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');
   background-repeat: repeat;
   background-position: center top;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 body {
-  transition: background-color 2s ease;
+  /*margin: 0px;
+    overflow: hidden;*/
 }
 h1 {
   font-size: 120px;
