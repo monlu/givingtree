@@ -8,9 +8,9 @@ $(function () {
 	// 	number += 100
 	// });
 
-	$('.fall').each( function ( i, d ) {
+	$('.fade').each( function ( i, d ) {
 		number = number || 300
-		stylizeWords($(d), number, 100, 50, "fall")
+		stylizeWords($(d), number, 100, 50, "fade")
 		number += 100
 	});
 
@@ -33,12 +33,12 @@ function stylizeWords ($dom, skroll, skrollInterval, letterInterval, effect) {
 		var data2 = 'data-'+(interval + skrollInterval)
 
 		if(effect == "fade"){
-			obj[data1] = "opacity: 0"
-			obj[data2] = "opacity: 1"
+			obj[data1] = "opacity: 0;"
+			obj[data2] = "opacity: 1;"
 		}
 		else if(effect == "fall") {
-			obj[data1] = "opacity: 0; transform: translateY(0px);"
-			obj[data2] = "opacity: 1; transform: translateY(10px);"
+			obj[data1] = "opacity: 0; opacity: 1; transform: translateY(-20px);"
+			obj[data2] = "opacity: 1; opacity: 1; transform: translateY(0px); display: inline-block;"
 		}
 
 		$(child).attr( obj )
