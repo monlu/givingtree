@@ -1,11 +1,20 @@
 $(function () {
 	console.log("window loaded")
 	var number
-	$('h1').each( function ( i, d ) {
-		number = number || 800
-		stylizeWords($(d), number, 100, 50)
+
+	// $('.fade').each( function ( i, d ) {
+	// 	number = number || 300
+	// 	stylizeWords($(d), number, 100, 50, "fade")
+	// 	number += 100
+	// });
+
+	$('.fall').each( function ( i, d ) {
+		number = number || 300
+		stylizeWords($(d), number, 100, 50, "fall")
 		number += 100
 	});
+
+
 	var s = skrollr.init({
 		render: function(data) {
 		  //Log the current scroll position.
@@ -15,15 +24,23 @@ $(function () {
 	});
 });
 
-function stylizeWords ($dom, skroll, skrollInterval, letterInterval) {
+function stylizeWords ($dom, skroll, skrollInterval, letterInterval, effect) {
 	var s = skroll
 	var interval = skroll + 0
 	$dom.lettering().children().each(function (index, child) {
 		var obj = {}
 		var data1 = 'data-'+interval
 		var data2 = 'data-'+(interval + skrollInterval)
-		obj[data1] = "opacity: 0"
-		obj[data2] = "opacity: 1"
+
+		if(effect == "fade"){
+			obj[data1] = "opacity: 0"
+			obj[data2] = "opacity: 1"
+		}
+		else if(effect == "fall") {
+			obj[data1] = "opacity: 0; transform: translateY(0px);"
+			obj[data2] = "opacity: 1; transform: translateY(10px);"
+		}
+
 		$(child).attr( obj )
 		interval += letterInterval
 	})
