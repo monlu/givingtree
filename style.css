@@ -57,31 +57,33 @@ section {
 
 /* Introduction */
 #slide-2 .item {position: absolute; top: 0; left: 0;}
-#slide-2 .tree1 {top: 0px; left: 100px; width: 650px;}
+#slide-2 .tree1 {top: 0px; left: 50px; width: 660px;}
 #slide-2 .tree2 {top: 0px; left: 200px; width: 750px;}
 #slide-2 .text1 {position: absolute;  left: 600px; top: 200px;}
 #slide-2 .text2 {position: absolute; left: 600px; top: 250px;}
-#slide-2 .boy1 {width: 200px; top: 550px;}
+#slide-2 .boy1 {width: 200px; top: 530px;}
 
 /* Gathering Leaves */
-#slide-2 .text3 {position: absolute;  left: 600px; top: 200px;}
+#slide-2 .text3 {position: absolute;  left: 600px; top: 300px;}
 #slide-2 .text4 {position: absolute;  left: 600px; top: 250px;}
 #slide-2 .text5 {position: absolute;  left: 600px; top: 300px;}
 #slide-2 .tree3 {top: 0px; left: 150px; width: 850px;}
-#slide-2 .boy2 {top: 450px; left: 750px; width: 100px;}
-#slide-2 .boy3 {top: 460px; left: 740px; width: 100px;}
+#slide-2 .boy2 {top: 450px; left: 750px; width: 90px;}
+#slide-2 .boy3 {top: 460px; left: 740px; width: 90px;}
 
 /* Climbing Tree */
 #slide-2 .tree4 {top: 0px; left: 70px; width: 730px;}
+#slide-2 .text6 {position: absolute;  left: 600px; top: 250px;}
 #slide-2 .boy4 {top: 400px; left: 310px; width: 150px;}
-#slide-2 .boy5 {top: 250px; left: 310px; width: 150px;}
-#slide-2 .boy6 {top: 100px; left: 310px; width: 150px;}
+#slide-2 .boy5 {top: 250px; left: 305px; width: 150px; transform: rotate(3deg);}
+#slide-2 .boy6 {top: 100px; left: 327px; width: 150px; transform: rotate(15deg);}
 
 /* Swinging In Tree */
-#slide-2 .boy7 {top: -50px; left: 710px; width: 350px;}
+#slide-2 .boy7 {top: -100px; left: 300px; width: 350px; z-index: -2;}
 
 /* Eating Apples */
 #slide-2 .tree5 {top: 0px; left: 150px; width: 1025px;}
+#slide-2 .tree5bg {top: 0px; left: 150px; width: 1025px; z-index:-1;}
 #slide-2 .apple1 {top: 100px; left: 800px; width: 30px;}
 #slide-2 .apple2 {top: 100px; left: 900px; width: 30px;}
 #slide-2 .apple3 {top: 100px; left: 700px; width: 30px;}
