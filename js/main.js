@@ -3,7 +3,7 @@ $(function () {
 	var number
 	$('h1').each( function ( i, d ) {
 		number = number || 800
-		stylizeWords($(d), number)
+		stylizeWords($(d), number, 100, 50)
 		number += 100
 	});
 	var s = skrollr.init({
@@ -15,16 +15,16 @@ $(function () {
 	});
 });
 
-function stylizeWords ($dom, skroll) {
+function stylizeWords ($dom, skroll, skrollInterval, letterInterval) {
 	var s = skroll
 	var interval = skroll + 0
 	$dom.lettering().children().each(function (index, child) {
 		var obj = {}
 		var data1 = 'data-'+interval
-		var data2 = 'data-'+(interval + 100)
+		var data2 = 'data-'+(interval + skrollInterval)
 		obj[data1] = "opacity: 0"
 		obj[data2] = "opacity: 1"
 		$(child).attr( obj )
-		interval += 50
+		interval += letterInterval
 	})
 }
