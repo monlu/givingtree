@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Amatic+SC|Reenie+Beanie);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC|Walter+Turncoat);
 
 html {
   background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');
@@ -10,7 +10,10 @@ body {
   /*margin: 0px;
     overflow: hidden;*/
     padding: 10px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', sans-serif;
+}
+.boytalk {
+  font-family: 'Walter Turncoat', sans-serif;
 }
 #border-t, #border-b, #border-l, #border-r {
   position: fixed;
@@ -149,12 +152,14 @@ section {
 #slide-2 .boy8 {top: 600px; left: 290px; width: 100px;}
 #slide-2 .tree6 {top: 0px; left: 315px; width: 950px;}
 #slide-2 .text9 {position: absolute;  left: 600px; top: 250px;}
+#boy-between-rock {width: 100%; height: 100%;}
 
 /* Sleeping Under Tree */
 #slide-2 .tree7 {top: 0px; left: 200px; width: 870px;}
 #slide-2 .applecores {top: 670px; left: 1000px; width: 75px;}
 #slide-2 .text10 {position: absolute;  left: 600px; top: 600px;}
 #slide-2 .text11 {position: absolute;  left: 650px; top: 620px;}
+
 
 /* Hugging Tree */
 #slide-2 .tree8 {top: 0px; left: 100px; width: 575px;}
