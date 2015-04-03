@@ -1,5 +1,5 @@
 html {
-/*  background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');
+  /*  background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');
   background-repeat: repeat;
   background-position: center top;
   background-attachment: fixed;*/
@@ -7,6 +7,41 @@ html {
 body {
   /*margin: 0px;
     overflow: hidden;*/
+    padding: 10px;
+}
+
+#border-t, #border-b, #border-l, #border-r {
+  position: fixed;
+  background: yellowgreen;
+  z-index: 9999;
+}
+
+#border-t {
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 10px;
+}
+
+#border-b {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+}
+
+#border-l {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+}
+
+#border-r {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
 }
 h1 {
   font-size: 120px;
@@ -74,9 +109,9 @@ section {
 /* Climbing Tree */
 #slide-2 .tree4 {top: 0px; left: 70px; width: 730px;}
 #slide-2 .text6 {position: absolute;  left: 600px; top: 250px;}
-#slide-2 .boy4 {top: 400px; left: 310px; width: 150px;}
-#slide-2 .boy5 {top: 250px; left: 305px; width: 150px; transform: rotate(3deg);}
-#slide-2 .boy6 {top: 100px; left: 327px; width: 150px; transform: rotate(15deg);}
+#slide-2 .boy4 {top: 400px; left: 310px; width: 140px; transform: rotate(-3deg);}
+#slide-2 .boy5 {top: 250px; left: 310px; width: 140px; transform: rotate(3deg);}
+#slide-2 .boy6 {top: 100px; left: 330px; width: 140px; transform: rotate(20deg);}
 
 /* Swinging In Tree */
 #slide-2 .boy7 {top: -100px; left: 300px; width: 350px; z-index: -1;}
