@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC|Reenie+Beanie);
+
 html {
   background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');
   background-repeat: repeat;
@@ -8,8 +10,8 @@ body {
   /*margin: 0px;
     overflow: hidden;*/
     padding: 10px;
+    font-family: 'Amatic SC', cursive;
 }
-
 #border-t, #border-b, #border-l, #border-r {
   position: fixed;
   background: yellowgreen;
@@ -44,7 +46,22 @@ body {
   width: 10px;
 }
 h1 {
-  font-size: 120px;
+  font-size: 130px;
+  color: darkolivegreen;
+  letter-spacing: 0.05em;
+}
+h1.lg {
+  font-size: 180px;
+  color: yellowgreen;
+  letter-spacing: 0.1em;
+  text-shadow:   
+    -3px -3px 0 darkolivegreen,  
+    3px -3px 0 darkolivegreen,
+    -3px 3px 0 darkolivegreen,
+    3px 3px 0 darkolivegreen;
+}
+h3{
+  font-size: 50px;
 }
 h2 {
   text-align: center;
@@ -85,10 +102,11 @@ section {
 #slide-1 .tree {top: 0px; left: 600px; width: 650px;}
 #slide-1 .boy {top: 500px; left: 600px; width: 150px;}
 #slide-1 .apple {top: 500px; left: 700px; width: 30px;}
-#slide-1 .text1 {position: absolute;  left: 200px; top: 20px;}
-#slide-1 .text2 {position: absolute;  left: 200px; top: 140px;}
-#slide-1 .text3 {position: absolute;  left: 200px; top: 260px;}
-#slide-1 .text4 {position: absolute;  left: 220px; top: 450px;}
+#slide-1 .text1 {position: absolute;  left: 300px; top: 20px;}
+#slide-1 .text2 {position: absolute;  left: 140px; top: 80px;}
+#slide-1 .text2 .char3 {font-size: 160px;}
+#slide-1 .text3 {position: absolute;  left: 280px; top: 300px;}
+#slide-1 .text4 {position: absolute;  left: 240px; top: 500px;}
 
 /* Introduction */
 #slide-2 .item {position: absolute; top: 0; left: 0;}
@@ -114,7 +132,7 @@ section {
 #slide-2 .boy6 {top: 100px; left: 330px; width: 140px; transform: rotate(20deg);}
 
 /* Swinging In Tree */
-#slide-2 .boy7 {top: -100px; left: 300px; width: 350px; z-index: -1;}
+#slide-2 .boy7 {top: -180px; left: 850px; width: 350px; z-index: -1;}
 #slide-2 .text7 {position: absolute;  left: 600px; top: 250px;}
 
 /* Eating Apples */
