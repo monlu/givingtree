@@ -14,6 +14,12 @@ $(function () {
 		number += 100
 	});
 
+	var number2
+	$('#boyasks').each( function ( i, d ) {
+		number2 = number2 || 30000
+		stylizeWords($(d), number2, 100, 50, "fade")
+		number2 += 100
+	});
 
 	var s = skrollr.init({
 		render: function(data) {
