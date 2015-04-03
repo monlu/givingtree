@@ -1,7 +1,7 @@
 $(function () {
 	console.log("window loaded")
 	var number
-
+	scrolltop = 0
 	// $('.fade').each( function ( i, d ) {
 	// 	number = number || 300
 	// 	stylizeWords($(d), number, 100, 50, "fade")
@@ -21,10 +21,30 @@ $(function () {
 		number2 += 100
 	});
 
+	var pages = [2600, 6100, 9500, 13700]
+
+	$('#info').click( function (e) {
+		switch(true) {
+			case (scrolltop < 2600):
+				$("html, body").animate({ scrollTop: "2600px"}, ( ( (2600-scrolltop) / 2600 ) * 5000 ) );
+				return false
+			case (scrolltop < 6100):
+				$("html, body").animate({ scrollTop: "6100px"}, 5000);
+				return false
+			case (scrolltop < 9500):
+				$("html, body").animate({ scrollTop: "9500px"}, 5000);
+				return false
+			case (scrolltop < 13700):
+				$("html, body").animate({ scrollTop: "13700px"}, 6000);
+				return false
+		}
+	})
+
 	var s = skrollr.init({
 		render: function(data) {
 		  //Log the current scroll position.
 		  $('#info').text(data.curTop);
+		  scrolltop = data.curTop;
 		}, 
     smoothScrolling : 'true'
 	});
