@@ -1,8 +1,8 @@
 html {
-  /*  background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');
+  background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');
   background-repeat: repeat;
   background-position: center top;
-  background-attachment: fixed;*/
+  background-attachment: fixed;
 }
 body {
   /*margin: 0px;
@@ -115,6 +115,7 @@ section {
 
 /* Swinging In Tree */
 #slide-2 .boy7 {top: -100px; left: 300px; width: 350px; z-index: -1;}
+#slide-2 .text7 {position: absolute;  left: 600px; top: 250px;}
 
 /* Eating Apples */
 #slide-2 .tree5 {top: -1px; left: 150px; width: 1025px; z-index: -3;}
@@ -122,26 +123,33 @@ section {
 #slide-2 .apple1 {top: 100px; left: 800px; width: 30px;}
 #slide-2 .apple2 {top: 100px; left: 900px; width: 30px;}
 #slide-2 .apple3 {top: 100px; left: 700px; width: 30px;}
+#slide-2 .text8 {position: absolute;  left: 600px; top: 250px;}
 
 /* Playing Hide and Seek */
 #slide-2 .rock1 {top: 550px; left: 400px; width: 300px;}
 #slide-2 .rock2 {top: 650px; left: 200px; width: 70px;}
 #slide-2 .boy8 {top: 600px; left: 290px; width: 100px;}
 #slide-2 .tree6 {top: 0px; left: 315px; width: 950px;}
+#slide-2 .text9 {position: absolute;  left: 600px; top: 250px;}
 
 /* Sleeping Under Tree */
 #slide-2 .tree7 {top: 0px; left: 200px; width: 870px;}
 #slide-2 .applecores {top: 670px; left: 1000px; width: 75px;}
+#slide-2 .text10 {position: absolute;  left: 600px; top: 600px;}
+#slide-2 .text11 {position: absolute;  left: 650px; top: 620px;}
 
 /* Hugging Tree */
 #slide-2 .tree8 {top: 0px; left: 100px; width: 575px;}
 #slide-2 .leaves2 {top: 0px; left: 612px; width: 400px;}
+#slide-2 .text12 {position: absolute;  left: 600px; top: 400px;}
 
 /* Carving Tree*/
 #slide-2 .tree9 {top: 0px; left: 200px; width: 675px;}
 #slide-2 .boy9 {top: 530px; left: 600px; width: 90px;}
 #slide-2 .knife {top: 670px; left: 680px; width: 50px;}
 #slide-2 .heart {top: 550px; left: 380px; width: 50px;}
+#slide-2 .text13 {position: absolute;  left: 630px; top: 420px;}
+#slide-2 .text14 {position: absolute;  left: 630px; top: 440px;}
 
 /* Time Passing */
 
@@ -152,15 +160,22 @@ section {
 /* Teen Lovin */
 
 #slide-3 .tree11 {top: 0px; left: 150px; width: 725px;}
+#slide-3 .heart2 {top: 480px; left: 330px; width: 45px;}
+#slide-3 .text15 {position: absolute;  left: 630px; top: 440px;}
 
 /* Lonely Tree */
 
 #slide-3 .tree12 {top: 0px; left: 150px; width: 725px;}
+#slide-3 .text16 {position: absolute;  left: 630px; top: 400px;}
 
 /* Young Man Talking to Tree */
 #slide-4 .item {position: absolute; top: 0; left: 0;}
 #slide-4 .tree13 {top: 0px; left: 400px; width: 800px;}
 #slide-4 .boy10 {top: 330px; left: 380px; width: 167px;}
+#slide-4 .text17 {position: absolute;  left: 630px; top: 160px;}
+#slide-4 .text18 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
+#slide-4 .text19 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
+#slide-4 .text20 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
 
 /* Young Man Taking Apples */
 #slide-4 .tree14 {top: 0px; left: 150px; width: 875px;}
@@ -175,6 +190,7 @@ section {
 #slide-4 .applecluster3 {top: 615px; left: 450px; width: 115px;}
 #slide-4 .applecluster4 {top: 615px; left: 570px; width: 115px;}
 #slide-4 .applecluster5 {top: 615px; left: 670px; width: 115px;}
+#slide-4 .text21 {position: absolute;  left: 600px; top: 160px; display: inline-block; width: 360px;}
 
 /* Man Asking For Branches */
 #slide-5 .item {position: absolute; top: 0; left: 0;}
