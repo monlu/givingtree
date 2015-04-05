@@ -2,11 +2,6 @@ $(function () {
 	console.log("window loaded")
 	var number
 	scrolltop = 0
-	// $('.fade').each( function ( i, d ) {
-	// 	number = number || 300
-	// 	stylizeWords($(d), number, 100, 50, "fade")
-	// 	number += 100
-	// });
 
 	$('.fade').each( function ( i, d ) {
 		number = number || 300
@@ -44,13 +39,25 @@ $(function () {
 
 	var pages = [2600, 6100, 9500, 13700]
 
-	$('#info').click( function (e) {
+
+
+	function scrollPage (pageIndex, time) {
+		var page = pages[pageIndex]
+		var lastPage = pages[pageIndex - 1] || 0
+		var pageDiff = page - lastPage
+		$("html, body").animate({ scrollTop: page+"px"}, ( ( (page-scrolltop) / pageDiff ) * time ) );
+	}
+
+
+
+
+	$('#up').click( function (e) {
 		switch(true) {
-			case (scrolltop < 2600):
-				$("html, body").animate({ scrollTop: "2600px"}, ( ( (2600-scrolltop) / 2600 ) * 5000 ) );
+			case (scrolltop < pages[0]):
+				scrollPage(0, 5000)
 				return false
-			case (scrolltop < 6100):
-				$("html, body").animate({ scrollTop: "6100px"}, 5000);
+			case (scrolltop < pages[1]):
+				scrollPage(1, 6000)
 				return false
 			case (scrolltop < 9500):
 				$("html, body").animate({ scrollTop: "9500px"}, 5000);
@@ -92,3 +99,4 @@ function stylizeWords ($dom, skroll, skrollInterval, letterInterval, effect) {
 		interval += letterInterval
 	})
 }
+
