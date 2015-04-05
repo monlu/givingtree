@@ -52,6 +52,7 @@ h2 {
   font-size: 36px ;
   line-height: 52px;
   text-align: center;
+  color: darkolivegreen;
 }
 .boytalk {
   font-size: 32px;
@@ -225,7 +226,7 @@ section {
 #slide-2 .knife {top: 670px; left: 680px; width: 50px;}
 #slide-2 .heart {top: 550px; left: 380px; width: 50px;}
 #slide-2 .text13 {position: absolute;  left: 630px; top: 420px;}
-#slide-2 .text14 {position: absolute;  left: 630px; top: 440px;}
+#slide-2 .text14 {position: absolute;  left: 630px; top: 350px;}
 
 /* Time Passing */
 
@@ -248,7 +249,7 @@ section {
 #slide-4 .item {position: absolute; top: 0; left: 0;}
 #slide-4 .tree13 {top: 0px; left: 400px; width: 800px;}
 #slide-4 .boy10 {top: 330px; left: 380px; width: 167px;}
-#slide-4 .text17 {position: absolute;  left: 630px; top: 160px;}
+#slide-4 .text17 {position: absolute;  left: 500px; top: 160px;}
 #slide-4 .text18 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
 #slide-4 .text19 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
 #slide-4 .text20 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
@@ -285,7 +286,7 @@ section {
 #slide-6 .tree17 {top: 0px; left: 170px; width: 280px;}
 #slide-6 .oldman1 {top: 260px; left: 900px; width: 160px;}
 #slide-6 .text23 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
-#slide-6 .text24 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
+#slide-6 .text24 {position: absolute;  left: 470px; top: 160px; display: inline-block; width: 360px;}
 
 /* Tree cut down */
 #slide-6 .axe {top: 580px; left: 480px; width: 200px;}
