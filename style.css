@@ -268,6 +268,7 @@ section {
 #slide-4 .applecluster4 {top: 615px; left: 570px; width: 115px;}
 #slide-4 .applecluster5 {top: 615px; left: 670px; width: 115px;}
 #slide-4 .text21 {position: absolute;  left: 600px; top: 160px; display: inline-block; width: 360px;}
+#slide-4 .passing {position: absolute;  left: 50%; top: 50%; transform: translate(-50%, 0); }
 
 /* Man Asking For Branches */
 #slide-5 .item {position: absolute; top: 0; left: 0;}
@@ -276,6 +277,7 @@ section {
 #slide-5 .tree16 {top: 0px; left: 150px; width: 350px;}
 #slide-5 .man2 {top: 180px; left: 500px; width: 580px;}
 #slide-5 .leaf1 {top: 570px; left: 700px; width: 30px;}
+#slide-4 .text22
 
 /* Old man asking tree */
 #slide-6 .item {position: absolute; top: 0; left: 0;}

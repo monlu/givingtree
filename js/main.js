@@ -1,5 +1,6 @@
 $(function () {
 	console.log("window loaded")
+	
 	var number
 	scrolltop = 0
 
