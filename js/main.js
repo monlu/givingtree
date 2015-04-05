@@ -1,6 +1,6 @@
 $(function () {
 	console.log("window loaded")
-	
+
 	var number
 	scrolltop = 0
 
@@ -36,6 +36,48 @@ $(function () {
 		number5 = number5 || 66000
 		stylizeWords($(d), number5, 100, 50, "fade")
 		number5 += 100
+	});
+
+	var number6
+	$('#manasks').each( function ( i, d ) {
+		number6 = number6 || 89500
+		stylizeWords($(d), number6, 100, 50, "fade")
+		number6 += 100
+	});
+
+	var number7
+	$('#manasks2').each( function ( i, d ) {
+		number7 = number7 || 93600
+		stylizeWords($(d), number7, 100, 50, "fade")
+		number7 += 100
+	});
+
+	var number8
+	$('#manasks3').each( function ( i, d ) {
+		number8 = number8 || 100300
+		stylizeWords($(d), number8, 100, 50, "fade")
+		number8 += 100
+	});
+
+	var number9
+	$('#oldmanasks').each( function ( i, d ) {
+		number9 = number9 || 114900
+		stylizeWords($(d), number9, 100, 50, "fade")
+		number9 += 100
+	});
+
+	var number10
+	$('#oldmanasks2').each( function ( i, d ) {
+		number10 = number10 || 116800
+		stylizeWords($(d), number10, 100, 50, "fade")
+		number10 += 100
+	});
+
+	var number11
+	$('#oldmanasks3').each( function ( i, d ) {
+		number11 = number11 || 122700
+		stylizeWords($(d), number11, 100, 50, "fade")
+		number11 += 100
 	});
 
 	var pages = [2600, 6100, 9500, 13700]

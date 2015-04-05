@@ -277,12 +277,15 @@ section {
 #slide-5 .tree16 {top: 0px; left: 150px; width: 350px;}
 #slide-5 .man2 {top: 180px; left: 500px; width: 580px;}
 #slide-5 .leaf1 {top: 570px; left: 700px; width: 30px;}
-#slide-4 .text22
+#slide-5 .text22 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
+#slide-5 .passing {position: absolute;  left: 50%; top: 50%; transform: translate(-50%, 0); }
 
 /* Old man asking tree */
 #slide-6 .item {position: absolute; top: 0; left: 0;}
 #slide-6 .tree17 {top: 0px; left: 170px; width: 280px;}
 #slide-6 .oldman1 {top: 260px; left: 900px; width: 160px;}
+#slide-6 .text23 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
+#slide-6 .text24 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
 
 /* Tree cut down */
 #slide-6 .axe {top: 580px; left: 480px; width: 200px;}
