@@ -91,9 +91,40 @@ h2 {
   bottom: 0;
   width: 10px;
 }
-#info {
+
+h1 {
+  font-size: 130px;
+  color: darkolivegreen;
+  letter-spacing: 0.05em;
+}
+h1.lg {
+  font-size: 180px;
+  color: yellowgreen;
+  letter-spacing: 0.1em;
+  text-shadow:   
+    -3px -3px 0 darkolivegreen,  
+    3px -3px 0 darkolivegreen,
+    -3px 3px 0 darkolivegreen,
+    3px 3px 0 darkolivegreen;
+}
+h3{
+  font-size: 50px;
+}
+h2 {
+  text-align: center;
+}
+#up {
   position: fixed;
   top: 20px;
+  left: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 20px;
+  z-index: 9999;
+}
+#down {
+  position: fixed;
+  top: 80px;
   left: 20px;
   background-color: rgba(0,0,0,0.5);
   color: #fff;
