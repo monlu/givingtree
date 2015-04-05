@@ -291,14 +291,21 @@ section {
 #slide-6 .axe {top: 580px; left: 480px; width: 200px;}
 #slide-6 .tree18 {top: 500px; left: 170px; width: 280px;}
 #slide-6 .oldman2 {top: 390px; left: 900px; width: 375px;}
+#slide-6 .text22 {position: absolute;  left: 530px; top: 160px; display: inline-block; width: 360px;}
+#slide-6 .passing {position: absolute;  left: 50%; top: 50%; transform: translate(-50%, 0); }
 
 /* old geezer arrives */
 #slide-7 .item {position: absolute; top: 0; left: 0;}
 #slide-7 .tree19 {top: 500px; left: 500px; width: 280px;}
 #slide-7 .geezer {top: 260px; left: 700px; width: 160px;}
+#slide-7 .text25 {position: absolute;  left: 300px; top: 160px; display: inline-block; width: 360px; text-align:left;}
+#slide-7 .text26 {position: absolute;  left: 530px; top: 100px; display: inline-block; width: 360px;}
+
 
 /* geezer sits on stump */
 #slide-7 .manandstump {top: 280px; left: 500px; width: 350px;}
 
 /* The End*/
-#slide-8 .theend {top: 250px; left: 500px; width: 400px;}
+#slide-8 .item {position: absolute; top: 0; left: 0;}
+#slide-8 .theend {top: 150px; left: 500px; width: 400px;}
+#slide-8 .theend h2{ font-size: 52px;}

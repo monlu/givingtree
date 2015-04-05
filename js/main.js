@@ -80,6 +80,70 @@ $(function () {
 		number11 += 100
 	});
 
+	var number12
+	$('#geezerasks').each( function ( i, d ) {
+		number12 = number12 || 136000
+		stylizeWords($(d), number12, 100, 50, "fade")
+		number12 += 100
+	});
+
+	var number13
+	$('#geezerasks2').each( function ( i, d ) {
+		number13 = number13 || 140300
+		stylizeWords($(d), number13, 100, 50, "fade")
+		number13 += 100
+	});
+
+	var number14
+	$('#geezerasks3').each( function ( i, d ) {
+		number14 = number14 || 142600
+		stylizeWords($(d), number14, 100, 50, "fade")
+		number14 += 100
+	});
+
+	var number15
+	$('#geezerasks4').each( function ( i, d ) {
+		number15 = number15 || 145600
+		stylizeWords($(d), number15, 100, 50, "fade")
+		number15 += 100
+	});
+
+	var number16
+	$('#geezerasks5').each( function ( i, d ) {
+		number16 = number16 || 148000
+		stylizeWords($(d), number16, 100, 50, "fade")
+		number16 += 100
+	});
+
+	var number17
+	$('#geezerasks6').each( function ( i, d ) {
+		number17 = number17 || 150400
+		stylizeWords($(d), number17, 100, 50, "fade")
+		number17 += 100
+	});
+
+	var number18
+	$('#geezerasks7').each( function ( i, d ) {
+		number18 = number18 || 152300
+		stylizeWords($(d), number18, 100, 50, "fade")
+		number18 += 100
+	});
+
+	var number19
+	$('#geezerasks8').each( function ( i, d ) {
+		number19 = number19 || 158900
+		stylizeWords($(d), number19, 100, 50, "fade")
+		number19 += 100
+	});
+
+	var number20
+	$('#geezerasks9').each( function ( i, d ) {
+		number20 = number20 || 163600
+		stylizeWords($(d), number20, 100, 50, "fade")
+		number20 += 100
+	});
+
+
 	var pages = [2600, 6100, 9500, 13700]
 
 
