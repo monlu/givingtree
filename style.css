@@ -299,8 +299,9 @@ section {
 #slide-7 .item {position: absolute; top: 0; left: 0;}
 #slide-7 .tree19 {top: 500px; left: 500px; width: 280px;}
 #slide-7 .geezer {top: 260px; left: 700px; width: 160px;}
-#slide-7 .text25 {position: absolute;  left: 300px; top: 160px; display: inline-block; width: 360px; text-align:left;}
-#slide-7 .text26 {position: absolute;  left: 530px; top: 100px; display: inline-block; width: 360px;}
+#slide-7 .text25 {position: absolute;  left: 300px; top: 230px; display: inline-block; width: 360px; text-align:left;}
+#slide-7 .text26 {position: absolute;  left: 570px; top: 100px; display: inline-block; width: 360px;}
+#slide-7 .text27 {position: absolute;  left: 550px; top: 300px; display: inline-block; width: 360px;}
 
 
 /* geezer sits on stump */

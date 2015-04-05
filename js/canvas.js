@@ -8,7 +8,7 @@ $(document).ready(function() {
     var w = canvas.width;
     var h = canvas.height;
     ctx.strokeStyle = 'rgba(174,194,224,0.5)';
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 2;
     ctx.lineCap = 'round';
     
     
