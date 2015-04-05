@@ -1,7 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC|Walter+Turncoat);
+@font-face {
+  font-family: 'Hearts';
+  src: url('fonts/MF-Love-Dings.ttf');
+}
+@font-face {
+  font-family: 'Tree';
+  src: url('fonts/Susquehanna.ttf');
+}
 
 html {
-  background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');
+  /*background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');*/
   background-repeat: repeat;
   background-position: center top;
   background-attachment: fixed;
@@ -12,8 +20,43 @@ body {
     padding: 10px;
     font-family: 'Amatic SC', sans-serif;
 }
+#hearts, #hearts2 {
+  font-family: 'Hearts';
+}
 .boytalk {
   font-family: 'Walter Turncoat', sans-serif;
+}
+h1 {
+  font-size: 130px;
+  color: darkolivegreen;
+  letter-spacing: 0.05em;
+}
+h1.lg {
+  font-size: 180px;
+  color: yellowgreen;
+  letter-spacing: 0.1em;
+  text-shadow:   
+    -3px -3px 0 black,  
+    3px -3px 0 black,
+    -3px 3px 0 black,
+    3px 3px 0 black;
+}
+h3{
+  font-size: 50px;
+}
+h2 {
+  text-align: center;
+}
+.treespeak{
+  font-family: 'Tree', cursive;
+  font-size: 36px ;
+  line-height: 52px;
+  text-align: center;
+}
+.boytalk {
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
 }
 #border-t, #border-b, #border-l, #border-r {
   position: fixed;
@@ -48,6 +91,7 @@ body {
   bottom: 0;
   width: 10px;
 }
+
 h1 {
   font-size: 130px;
   color: darkolivegreen;

@@ -1,5 +1,5 @@
 
-/* leaf animations */
+/* Leaf animations */
 
 #leaves {position:relative;top:-50px; left:-150px; width:100%;text-align: center;}
 
@@ -18,12 +18,9 @@
 #leaves i:nth-of-type(3n) { -webkit-animation: falling3 4s 0s infinite; }
 
 
-
 #leaves i:nth-of-type(n)    { height:23px; width:30px; }
 
-
 #leaves i:nth-of-type(2n+1)    { height:15px; width:21px; }
-
 
 #leaves i:nth-of-type(3n+2)  { height:17px; width:23px; }
 
@@ -104,6 +101,117 @@
 }
 
 
+#leaves2 {position:relative; width:75%;text-align: center;}
+
+#leaves2 i {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    background: darkkhaki;
+    transform: skew(20deg);
+    border-radius: 10% 100% 2% 100%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-animation: slowfall 7s 0s infinite;
+}
+
+#leaves2 i:nth-of-type(2n) { -webkit-animation: slowfall2 7s 0s infinite; }
+#leaves2 i:nth-of-type(3n) { -webkit-animation: slowfall3 8s 0s infinite; }
+
+
+#leaves2 i:nth-of-type(n)    { height:23px; width:30px; }
+
+#leaves2 i:nth-of-type(2n+1)    { height:15px; width:21px; }
+
+#leaves2 i:nth-of-type(3n+2)  { height:17px; width:23px; }
+
+
+
+#leaves2 i:nth-of-type(n)   { -webkit-animation-delay: 0s;  }
+#leaves2 i:nth-of-type(2n)  { -webkit-animation-delay: 0.5s;}
+#leaves2 i:nth-of-type(3n)  { -webkit-animation-delay: 1s;  }
+#leaves2 i:nth-of-type(4n)  { -webkit-animation-delay: 1.5s;}
+#leaves2 i:nth-of-type(5n)  { -webkit-animation-delay: 2s;  }
+#leaves2 i:nth-of-type(6n)  { -webkit-animation-delay: 2.5s;}
+#leaves2 i:nth-of-type(7n)  { -webkit-animation-delay: 3s;  }
+#leaves2 i:nth-of-type(8n)  { -webkit-animation-delay: 3.5s;}
+#leaves2 i:nth-of-type(9n)  { -webkit-animation-delay: 4s;  }
+#leaves2 i:nth-of-type(10n) { -webkit-animation-delay: 4.5s;}
+#leaves2 i:nth-of-type(11n) { -webkit-animation-delay: 5s;  }
+#leaves2 i:nth-of-type(12n) { -webkit-animation-delay: 5.5s;}
+#leaves2 i:nth-of-type(13n) { -webkit-animation-delay: 6s;  }
+#leaves2 i:nth-of-type(14n) { -webkit-animation-delay: 6.5s;}
+#leaves2 i:nth-of-type(15n) { -webkit-animation-delay: 7s;  }
+
+
+#leaves2 i:nth-of-type(3n)  { background: tan; }
+
+
+/*#leaves2 i:nth-of-type(n)    { opacity: .7;}
+#leaves2 i:nth-of-type(3n+1)  { opacity: .5;}
+#leaves2 i:nth-of-type(3n+2)  { opacity: .3;}*/
+
+#leaves2 i:nth-of-type(n)    {transform: rotate(180deg);}
+
+
+#leaves2 i:nth-of-type(n) { -webkit-animation-timing-function:ease-in-out;}
+
+@-webkit-keyframes slowfall {
+    
+    0% {
+        -webkit-transform:
+            translate3d(-200,0,0)
+            rotate(0deg);
+            opacity: 0 ;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform:
+            translate3d(300px,700px,0)
+            rotate(90deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slowfall3 {
+     0% {
+        -webkit-transform:
+            translate3d(-100,0,0)
+            rotate(-20deg);
+            opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform:
+            translate3d(230px,640px,0)
+            rotate(-70deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slowfall2 {
+     0% {
+        -webkit-transform:
+            translate3d(0,0,0)
+            rotate(90deg);
+            opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform:
+            translate3d(200px,680px,0)
+            rotate(0deg);
+        opacity: 0;
+    }
+}
+
+
 
 /* Z animations */
 
@@ -114,8 +222,8 @@
     bottom:150px; 
     left:460px;
     font-size: 32px;
-    width: 200px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     z-index: 1;
     opacity: 0;
     transform: rotate(-10deg);
@@ -124,17 +232,6 @@
 
 #zzz i:nth-of-type(2n) { -webkit-animation: sleeping2 7s 0s infinite; }
 #zzz i:nth-of-type(3n) { -webkit-animation: sleeping3 8s 0s infinite; }
-
-
-
-#zzz i:nth-of-type(n)    { height:50px; width:50px; }
-
-
-#zzz i:nth-of-type(2n+1)    { height:50px; width:50px; }
-
-
-#zzz i:nth-of-type(3n+2)  { height:50px; width:50px; }
-
 
 #zzz i:nth-of-type(n)   { -webkit-animation-delay: 0s;  }
 #zzz i:nth-of-type(2n)  { -webkit-animation-delay: 0.5s;}
@@ -151,17 +248,6 @@
 #zzz i:nth-of-type(13n) { -webkit-animation-delay: 6s;  }
 #zzz i:nth-of-type(14n) { -webkit-animation-delay: 6.5s;}
 #zzz i:nth-of-type(15n) { -webkit-animation-delay: 7s;  }
-
-
-
-
-
-/*#zzz i:nth-of-type(n)    { opacity: .7;}
-#zzz i:nth-of-type(3n+1)  { opacity: .5;}
-#zzz i:nth-of-type(3n+2)  { opacity: .3;}*/
-
-/*#zzz i:nth-of-type(n)    {transform: rotate(180deg);}*/
-
 
 #zzz i:nth-of-type(n) { -webkit-animation-timing-function:ease-in-out;}
 
@@ -219,6 +305,208 @@
     100% {
         -webkit-transform:
             translate3d(400px,-150px,0);
+        opacity: 0;
+    }
+}
+
+/* Heart 1 animations */
+
+#hearts {width:100%;text-align: center;}
+
+#hearts i {
+    color: red;
+    position: absolute;
+    bottom:110px; 
+    left:380px;
+    width: 200px;
+    font-size: 48px;
+    height: 200px;
+    z-index: 1;
+    opacity: 0;
+    overflow: visible;
+    transform: rotate(-20deg);
+    -webkit-animation: floating 7s 0s infinite;
+}
+#hearts i:nth-of-type(2n) { -webkit-animation: floating2 7s 0s infinite; }
+#hearts i:nth-of-type(3n) { -webkit-animation: floating3 6s 0s infinite; }
+#hearts i:nth-of-type(2n+1)    { font-size:32px;}
+
+#hearts i:nth-of-type(n)   { -webkit-animation-delay: 0s;  }
+#hearts i:nth-of-type(2n)  { -webkit-animation-delay: 0.7s;}
+#hearts i:nth-of-type(3n)  { -webkit-animation-delay: 1.4s;  }
+#hearts i:nth-of-type(4n)  { -webkit-animation-delay: 2.1s;}
+#hearts i:nth-of-type(5n)  { -webkit-animation-delay: 2.8s;  }
+#hearts i:nth-of-type(6n)  { -webkit-animation-delay: 3.5s;}
+#hearts i:nth-of-type(7n)  { -webkit-animation-delay: 4.2s;  }
+#hearts i:nth-of-type(8n)  { -webkit-animation-delay: 4.9s;}
+#hearts i:nth-of-type(9n)  { -webkit-animation-delay: 5.6s;  }
+#hearts i:nth-of-type(10n) { -webkit-animation-delay: 6.3s;}
+
+#hearts i:nth-of-type(2n)    {transform: rotate(30deg);}
+#hearts i:nth-of-type(3n)    {transform: rotate(20deg);}
+
+#hearts i:nth-of-type(n) { -webkit-animation-timing-function:ease-in-out;}
+
+@-webkit-keyframes floating {
+    
+    0% {
+        -webkit-transform:
+            translate3d(-300,0,0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1; 
+    }
+    70%{
+        opacity: 0; 
+    }
+    100% {
+        -webkit-transform:
+            translate3d(350px,-200px,0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes floating3 {
+    0% {
+        -webkit-transform:
+            translate3d(-100,0,0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1; 
+    }
+    70%{
+        opacity: 0; 
+    }
+    100% {
+        -webkit-transform:
+            translate3d(230px,-175px,0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes floating2 {
+     0% {
+        -webkit-transform:
+            translate3d(0,0,0);
+        opacity:0;
+    }
+    50%{
+        opacity: 1; 
+    }
+    70%{
+        opacity: 0; 
+    }
+    100% {
+        -webkit-transform:
+            translate3d(400px,-150px,0);
+        opacity: 0;
+    }
+}
+
+/* Heart 2 animations */
+
+#hearts2 {width:100%;text-align: center;}
+
+#hearts2 i {
+    color: deeppink;
+    position: absolute;
+    bottom:230px; 
+    left:400px;
+    width: 30px;
+    font-size: 28px;
+    height: 30px;
+    z-index: 1;
+    opacity: 0;
+    overflow: visible;
+    transform: rotate(-20deg);
+    -webkit-animation: flutter 4s 0s infinite;
+}
+#hearts2 i:nth-of-type(2n) { -webkit-animation: flutter2 5s 0s infinite; }
+#hearts2 i:nth-of-type(3n) { -webkit-animation: flutter3 4s 0s infinite; }
+#hearts2 i:nth-of-type(3n+1)    { font-size:48px;}
+#hearts2 i:nth-of-type(2n+2)    { font-size:36px;}
+
+#hearts2 i:nth-of-type(n)   { -webkit-animation-delay: 0s;  }
+#hearts2 i:nth-of-type(2n)  { -webkit-animation-delay: 0.2s;}
+#hearts2 i:nth-of-type(3n)  { -webkit-animation-delay: 0.4s;  }
+#hearts2 i:nth-of-type(4n)  { -webkit-animation-delay: 0.6s;}
+#hearts2 i:nth-of-type(5n)  { -webkit-animation-delay: 0.8s;  }
+#hearts2 i:nth-of-type(6n)  { -webkit-animation-delay: 1.0s;}
+#hearts2 i:nth-of-type(7n)  { -webkit-animation-delay: 1.2s;  }
+#hearts2 i:nth-of-type(8n)  { -webkit-animation-delay: 1.4s;}
+#hearts2 i:nth-of-type(9n)  { -webkit-animation-delay: 1.6s;  }
+#hearts2 i:nth-of-type(10n) { -webkit-animation-delay: 1.8s;}
+#hearts2 i:nth-of-type(11n) { -webkit-animation-delay: 2.0s;  }
+#hearts2 i:nth-of-type(12n) { -webkit-animation-delay: 2.2s;}
+#hearts2 i:nth-of-type(13n) { -webkit-animation-delay: 2.4s;  }
+#hearts2 i:nth-of-type(14n) { -webkit-animation-delay: 2.6s;}
+#hearts2 i:nth-of-type(15n) { -webkit-animation-delay: 2.8s;  }
+#hearts2 i:nth-of-type(16n) { -webkit-animation-delay: 3.0s;  }
+#hearts2 i:nth-of-type(17n) { -webkit-animation-delay: 3.2s;  }
+#hearts2 i:nth-of-type(19n) { -webkit-animation-delay: 3.4s;  }
+#hearts2 i:nth-of-type(20n) { -webkit-animation-delay: 3.6s;  }
+
+#hearts2 i:nth-of-type(3n)    {transform: rotate(30deg);}
+#hearts2 i:nth-of-type(2n)    {transform: rotate(-30deg);}
+
+#hearts2 i:nth-of-type(n) { -webkit-animation-timing-function:ease-in-out;}
+
+@-webkit-keyframes flutter {
+    
+    0% {
+        -webkit-transform:
+            translate3d(-10px,-5px,0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1; 
+    }
+    60%{
+        opacity: 0; 
+    }
+    100% {
+        -webkit-transform:
+            translate3d(450px,-300px,0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes flutter3 {
+    0% {
+        -webkit-transform:
+            translate3d(-5px,0,0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1; 
+    }
+    70%{
+        opacity: 0; 
+    }
+    100% {
+        -webkit-transform:
+            translate3d(530px,-250px,0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes flutter2 {
+     0% {
+        -webkit-transform:
+            translate3d(10px,0,0);
+        opacity:0;
+    }
+    40%{
+        opacity: 1; 
+    }
+    60%{
+        opacity: 0; 
+    }
+    100% {
+        -webkit-transform:
+            translate3d(600px,-150px,0);
         opacity: 0;
     }
 }

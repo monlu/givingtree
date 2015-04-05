@@ -11,12 +11,35 @@ $(function () {
 
 	var number2
 	$('#boyasks').each( function ( i, d ) {
-		number2 = number2 || 30000
+		number2 = number2 || 51500
 		stylizeWords($(d), number2, 100, 50, "fade")
 		number2 += 100
 	});
 
-	pages = [2600, 6100, 9500, 13700]
+	var number3
+	$('#boyasks2').each( function ( i, d ) {
+		number3 = number3 || 58400
+		stylizeWords($(d), number3, 100, 50, "fade")
+		number3 += 100
+	});
+
+	var number4
+	$('#boyasks3').each( function ( i, d ) {
+		number4 = number4 || 61300
+		stylizeWords($(d), number4, 100, 50, "fade")
+		number4 += 100
+	});
+
+	var number5
+	$('#boyasks4').each( function ( i, d ) {
+		number5 = number5 || 66000
+		stylizeWords($(d), number5, 100, 50, "fade")
+		number5 += 100
+	});
+
+	var pages = [2600, 6100, 9500, 13700]
+
+
 
 	function scrollPage (pageIndex, time) {
 		var page = pages[pageIndex]
