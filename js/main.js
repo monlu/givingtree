@@ -18,7 +18,7 @@ $(function () {
 	});
 
 	var number3
-	$('#boyasks2').each( function ( i, d ) {
+	$('#boyasks_wtf').each( function ( i, d ) {
 		number3 = number3 || 58400
 		stylizeWords($(d), number3, 100, 50, "fade")
 		number3 += 100
@@ -145,6 +145,7 @@ $(function () {
 
 
 	var pages = [2600, 6100, 9500, 13700]
+	var p = [1800, 6713, 14307, 17600, 22384, 25643, 28630, 33423, 37607, 39179, 41468, 45668, 48769, 74484, 83457, 87464, 107144, 111546, 114291, 127429, 131037, 132516, 135174, 169925]
 
 
 
