@@ -25,8 +25,12 @@ $(function () {
 		$("html, body").animate({ scrollTop: page+"px"}, ( ( (page-scrolltop) / pageDiff ) * time ) );
 	}
 
-
-
+	function scrollLastPage (pageIndex, time) {
+		var page = pages[pageIndex]
+		var lastPage = pages[pageIndex - 1] || 0
+		var pageDiff = page - lastPage
+		$("html, body").animate({ scrollTop: lastPage+"px"}, ( ( (scrolltop-lastPage) / pageDiff ) * time ) );
+	}
 
 	$('#up').click( function (e) {
 		switch(true) {
@@ -45,10 +49,21 @@ $(function () {
 		}
 	})
 
+	$('#down').click( function (e) {
+		switch(true) {
+			case (scrolltop <= pages[0]):
+				scrollLastPage(0, 5000)
+				return false
+			case (scrolltop <= pages[1]):
+				scrollLastPage(1, 6000)
+				return false
+		}
+	})
+
 	var s = skrollr.init({
 		render: function(data) {
 		  //Log the current scroll position.
-		  $('#info').text(data.curTop);
+		  $('#up').text(data.curTop);
 		  scrolltop = data.curTop;
 		}, 
     smoothScrolling : 'true'
