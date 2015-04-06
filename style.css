@@ -125,7 +125,6 @@ h2 {
   height: 0; 
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-left: 40px solid darkolivegreen;
   transform: rotate(45deg);
 }
 #down {
@@ -139,10 +138,18 @@ h2 {
   height: 0; 
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-left: 40px solid darkolivegreen;
   transform: rotate(135deg);
 }
-#down:hover, #up:hover {
+
+.ready {
+  border-left: 40px solid darkolivegreen;
+}
+
+.running {
+  border-left: 40px solid red;
+}
+
+.ready:hover, .ready:hover {
   cursor:pointer;
   border-left: 40px solid yellowgreen;
 }

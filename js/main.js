@@ -27,17 +27,26 @@ $(function () {
 		var page = pages[pageIndex]
 		var lastPage = pages[pageIndex - 1] || 0
 		var pageDiff = page - lastPage
-		$("html, body").animate({ scrollTop: page+"px"}, ( ( (page-scrolltop) / pageDiff ) * time ) );
+		var relativeTime = ((page-scrolltop) / pageDiff ) * time
+		setTimeout( function () {
+			$('.running').removeClass('running').addClass('ready')
+		}, relativeTime)
+		$("html, body").animate({ scrollTop: page+"px"}, relativeTime );
 	}
 
 	function scrollLastPage (pageIndex, time) {
 		var page = pages[pageIndex]
 		var lastPage = pages[pageIndex - 1] || 0
 		var pageDiff = page - lastPage
-		$("html, body").animate({ scrollTop: lastPage+"px"}, ( ( (scrolltop-lastPage) / pageDiff ) * time ) );
+		var relativeTime = ( ( (scrolltop-lastPage) / pageDiff ) * time )
+		setTimeout( function () {
+			$('.running').removeClass('running').addClass('ready')
+		}, relativeTime)
+		$("html, body").animate({ scrollTop: lastPage+"px"}, relativeTime );
 	}
 
 	$('#up').click( function (e) {
+		$('.ready').removeClass('ready').addClass('running')
 		switch(true) {
 			case (scrolltop < pages[0]):
 				scrollPage(0, 5000)
@@ -127,6 +136,7 @@ $(function () {
 	})
 
 	$('#down').click( function (e) {
+		$(this).removeClass('ready').addClass('running')
 		switch(true) {
 			case (scrolltop <= pages[0]):
 				scrollLastPage(0, 5000)
