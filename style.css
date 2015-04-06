@@ -115,31 +115,36 @@ h2 {
   text-align: center;
 }
 #up {
+  content:"";
   position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: rgba(0,0,0,0.5);
-  color: #fff;
-  padding: 20px;
+  right: 20px;
+  bottom: 0px;
+  color: transparent;
   z-index: 9999;
+  width: 0; 
+  height: 0; 
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid darkolivegreen;
+  transform: rotate(45deg);
 }
 #down {
+  content:"";
   position: fixed;
-  top: 80px;
   left: 20px;
-  background-color: rgba(0,0,0,0.5);
-  color: #fff;
-  padding: 20px;
+  bottom: 0px;
+  color: transparent;
   z-index: 9999;
+  width: 0; 
+  height: 0; 
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid darkolivegreen;
+  transform: rotate(135deg);
 }
-#scrollBaby {
-  width: 184px;
-  height: 286px;
-  background: url('http://ihatetomatoes.net/merry-christmallax/img/img_get-scrolling.png') no-repeat top left;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  margin-left: -92px;
+#down:hover, #up:hover {
+  cursor:pointer;
+  border-left: 40px solid yellowgreen;
 }
 section {
   height: 5000px;
