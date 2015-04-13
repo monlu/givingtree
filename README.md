@@ -88,7 +88,8 @@ $(document).ready(function() {
       ctx.clearRect(0, 0, w, h);
       for(var c = 0; c < particles.length; c++) {
         var p = particles[c];
-        var gradient = ctx.createLinearGradient(                         p.x, p.y, p.x + p.l * p.xs, p.y + p.l *                     p.ys)
+        var gradient = 
+        ctx.createLinearGradient(p.x, p.y, p.x + p.l * p.xs, p.y + p.l * p.ys)
         gradient.addColorStop(0, 'white')
         gradient.addColorStop(0.5, 'skyblue')
         gradient.addColorStop(1, 'white')
