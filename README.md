@@ -326,7 +326,9 @@ $(function () {
       number += 100
     });
 
-    var dialogIndex = [51500, 58400, 61300, 66000, 89500, 93600, 100300, 114900, 116800, 122700, 136000, 140300, 142600, 145600, 148000, 150400, 152300, 158900, 163600]
+    var dialogIndex = [51500, 58400, 61300, 66000, 89500, 
+    93600, 100300, 114900, 116800, 122700, 136000, 140300, 
+    142600, 145600, 148000, 150400, 152300, 158900, 163600]
 
     for (var i= 0; i < dialogIndex.length; i++) {
         var pagePosition = dialogIndex[i]
@@ -349,7 +351,8 @@ $(function () {
       }
       else if(effect == "fall") {
         obj[data1] = "opacity: 0; opacity: 1; transform: translateY(-20px);"
-        obj[data2] = "opacity: 1; opacity: 1; transform: translateY(0px); display: inline-block;"
+        obj[data2] = 
+        "opacity: 1; opacity: 1; transform: translateY(0px); display: inline-block;"
       }
 
       $(child).attr( obj )
