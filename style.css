@@ -169,7 +169,7 @@ section {
 .txt-center-200 { text-align:center; right:0; width: 400px; margin: 200px auto;}
 .txt-center-300 { text-align:center; right:0; width: 400px; margin: 300px auto;}
 .txt-center-400 { text-align:center; right:0; width: 400px; margin: 400px auto;}
-.txt-left {position: absolute;  left: 300px; top: 230px; display: inline-block; width: 360px; text-align:left;}
+.txt-left h3{text-align:left; width: 400px; margin: 250px auto 400px 280px;}
 
 /* Title Page */
 #slide-1 .item {position: absolute; top: 0; left: 0;}
