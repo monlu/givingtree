@@ -3,11 +3,13 @@
 ## Synopsis
 
 Used modern web technologies to animate a classic story
-Built with CSS3 animations, HTML5 Canvas, jQuery, lettering.js and scrollr.js
+Built with jQuery, scrollr.js, HTML5 Canvas, CSS3 animations, and lettering.js.
 
 ## HTML5 canvas animation
 
 The canvas object is created at the top of the page, but is not displayed until later in the story. It is used at different intervals to show time passing as the boy grows up. The animation is a subtle used of particles moving in a random pattern to create a "wind-like" effect. 
+
+![alt tag](https://raw.github.com/reminagreenfield/givingtree/img/givingtree_screenshot1.png)
 
 ### HTML
 
@@ -247,6 +249,114 @@ CSS3 animations were triggered at certain scroll depths, adding movement and col
         opacity: 0;
     }
 }
+
+```
+
+## Lettering.js
+
+Lettering.js was used to break words into individual letter spans that could be animated individually.  
+
+### HTML
+
+```html
+
+  <div class='item text1'
+    data-0="opacity: 0;"
+    data-300="opacity: 1;"
+    data-1800="opacity: 1;"
+    data-2500="opacity: 0;"
+  >
+    <h1 class="title">the</h1>
+  </div>
+  <div class=bcg></div>
+  <div class='item text2'
+    data-300="opacity: 0"
+    data-600="opacity: 1;"
+    data-1800="opacity: 1;"
+    data-2500="opacity: 0;"
+  >
+    <h1 class="lg title">giving</h1>
+  </div>
+  <div class=bcg></div>
+  <div class='item text3'
+    data-600="opacity: 0"
+    data-900="opacity: 1;"
+    data-1800="opacity: 1;"
+    data-2500="opacity: 0;"
+  >
+    <h1 class="title">tree</h1>
+  </div>
+
+```
+
+### CSS
+
+```css
+
+h1 {
+  font-size: 130px;
+  color: darkolivegreen;
+  letter-spacing: 0.05em;
+}
+h1.lg {
+  font-size: 180px;
+  color: yellowgreen;
+  letter-spacing: 0.1em;
+  text-shadow:   
+    -3px -3px 0 darkolivegreen,  
+    3px -3px 0 darkolivegreen,
+    -3px 3px 0 darkolivegreen,
+    3px 3px 0 darkolivegreen;
+}
+
+```
+
+### Javascript
+
+```javascript
+
+$(function () {
+  console.log("window loaded")
+
+  var number
+
+  $('.title').each( function ( i, d ) {
+      number = number || 300
+      stylizeWords($(d), number, 100, 50, "fade")
+      number += 100
+    });
+
+    var dialogIndex = [51500, 58400, 61300, 66000, 89500, 93600, 100300, 114900, 116800, 122700, 136000, 140300, 142600, 145600, 148000, 150400, 152300, 158900, 163600]
+
+    for (var i= 0; i < dialogIndex.length; i++) {
+        var pagePosition = dialogIndex[i]
+      $($('.dialogue')[i]).each( function ( i, d ) {
+        stylizeWords($(d), pagePosition, 100, 50, "fade")
+      });
+    };
+
+  function stylizeWords ($dom, skroll, skrollInterval, letterInterval, effect) {
+    var s = skroll
+    var interval = skroll + 0
+    $dom.lettering().children().each(function (index, child) {
+      var obj = {}
+      var data1 = 'data-'+interval
+      var data2 = 'data-'+(interval + skrollInterval)
+
+      if(effect == "fade"){
+        obj[data1] = "opacity: 0;"
+        obj[data2] = "opacity: 1;"
+      }
+      else if(effect == "fall") {
+        obj[data1] = "opacity: 0; opacity: 1; transform: translateY(-20px);"
+        obj[data2] = "opacity: 1; opacity: 1; transform: translateY(0px); display: inline-block;"
+      }
+
+      $(child).attr( obj )
+      interval += letterInterval
+    })
+  }
+});
 
 ```
 

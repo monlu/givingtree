@@ -7,18 +7,13 @@
   font-family: 'Tree';
   src: url('fonts/Susquehanna.ttf');
 }
-
 html {
-  /*background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');*/
   background-repeat: repeat;
   background-position: center top;
   background-attachment: fixed;
 }
 body {
-  /*margin: 0px;
-    overflow: hidden;*/
-    
-    font-family: 'Amatic SC', sans-serif;
+  font-family: 'Amatic SC', sans-serif;
 }
 #hearts, #hearts2 {
   font-family: 'Hearts';
@@ -64,35 +59,30 @@ h2 {
   background: yellowgreen;
   z-index: 9999;
 }
-
 #border-t {
   left: 0;
   right: 0;
   top: 0;
   height: 10px;
 }
-
 #border-b {
   left: 0;
   right: 0;
   bottom: 0;
   height: 10px;
 }
-
 #border-l {
   left: 0;
   top: 0;
   bottom: 0;
   width: 10px;
 }
-
 #border-r {
   right: 0;
   top: 0;
   bottom: 0;
   width: 10px;
 }
-
 h1 {
   font-size: 130px;
   color: darkolivegreen;
@@ -140,15 +130,12 @@ h2 {
   border-bottom: 40px solid transparent;
   transform: rotate(135deg);
 }
-
 .ready {
   border-left: 40px solid darkolivegreen;
 }
-
 .running {
   border-left: 40px solid skyblue;
 }
-
 .ready:hover, .ready:hover {
   cursor:pointer;
   border-left: 40px solid yellowgreen;
@@ -165,6 +152,8 @@ section {
   height: 100%;
   width: 100%;
 }
+
+/* Text Positioning */
 .txt-center-100 { text-align:center; right:0; width: 400px; margin: 100px auto;}
 .txt-center-200 { text-align:center; right:0; width: 400px; margin: 200px auto;}
 .txt-center-300 { text-align:center; right:0; width: 400px; margin: 300px auto;}
