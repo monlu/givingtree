@@ -9,8 +9,6 @@ Built with jQuery, scrollr.js, HTML5 Canvas, CSS3 animations, and lettering.js.
 
 The canvas object is created at the top of the page, but is not displayed until later in the story. It is used at different intervals to show time passing as the boy grows up. The animation is a subtle used of particles moving in a random pattern to create a "wind-like" effect. 
 
-![alt tag](https://raw.github.com/reminagreenfield/givingtree/img/givingtree_screenshot1.png)
-
 ### HTML
 
 ```html
